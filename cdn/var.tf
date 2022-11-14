@@ -22,5 +22,5 @@ variable "acm_certificate_arn_to_use" {
 
 variable "locations" {
   type    = list(string)
-  default = null
+  default = "BR"
 }
