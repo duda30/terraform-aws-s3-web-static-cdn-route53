@@ -3,6 +3,8 @@
 Esse módulo oferece a criação de uma distribuição CloudFront, a criação de um bucket com a função de web static site e 
 dois registros no ROUTE53.
 
+
+
 Módulo CDN:
 
 restri-type | é o tipo da restrição que você quer fazer na distribuição | "whitelist" = default
@@ -15,6 +17,7 @@ indique o seu domínio com "www" e sem "www" - totalmente qualificado | null = d
 locations | localizações que deseja liberar o acesso a distribuição | ["BR"] = default
 
 
+
 Módulo ROUTE-53:
 
 zone-name | nome da zona já existente/domínio na sua conta AWS | null = default
@@ -22,6 +25,7 @@ zone-name | nome da zona já existente/domínio na sua conta AWS | null = defaul
 cdn-domain-name | valor "domain_name" do módulo filho "cdn" | declarar = module.cdn.domain_name_cdn
 
 cdn-hosted-zone-id | valor "hosted_zone_id" do módulo filho "cdn" | declarar = module.cdn.hosted_zone_id
+
 
 
 Módulo S3:
