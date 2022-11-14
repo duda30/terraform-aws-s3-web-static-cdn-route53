@@ -13,7 +13,7 @@ module "cdn" {
   bucket-oringin-id          = module.s3.bucket_id
   restri-type                = "whitelist"
   website_domain_name        = "maria-desafio-2-sust.daredelabs.com.br"
-  acm_certificate_arn_to_use = "arn:aws:acm:us-east-1:613036180535:certificate/c7e935a2-2c35-4354-9c24-2b1fd4eea335"
+  acm_certificate_arn_to_use = "arn:aws:acm:us-east-1:613036180535:certificate/58dbf9c3-a66f-4331-ac8d-34b8f09f5c81"
   locations                  = ["BR"]
 }
 
